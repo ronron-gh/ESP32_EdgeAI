@@ -29,14 +29,14 @@ def make_dataset_csv(root_folder):
 		for subfolder in subfolders:
 			#print('SUBFOLDER OF ' + foldername + ': ' + subfolder)
 			# 変換後の画像を格納するフォルダにカテゴリ毎のフォルダを作っておく
-			os.makedirs('.\\' + outputFolder + '\\' + subfolder)
+			os.makedirs('./' + outputFolder + '/' + subfolder)
 
 		for filename in filenames:
 			#print('FILE INSIDE ' + foldername + ': ' + filename)
 
 			result = pattern.match(filename)
 			if result:
-				print('listed file : ' + foldername + '\\' + filename)
+				print('listed file : ' + foldername + '/' + filename)
 				category = os.path.basename(foldername)
 				csvLines.append('./' + outputFolder + '/' + category + '/' + filename + ',' + category)
 				
