@@ -40,10 +40,10 @@ def make_dataset_csv(root_folder):
 				category = os.path.basename(foldername)
 				csvLines.append('./' + outputFolder + '/' + category + '/' + filename + ',' + category)
 				
-				img = Image.open(foldername + '\\' + filename)
+				img = Image.open(foldername + '/' + filename)
 				img_gray = img.convert("L")
 				img_resized = img_gray.resize((imgSize, imgSize))
-				img_resized.save('.\\' + outputFolder + '\\' + category + '\\' + filename)
+				img_resized.save('.' + outputFolder + '/' + category + '/' + filename)
 				
 
 	# データセットの順番を混ぜる
