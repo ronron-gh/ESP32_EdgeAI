@@ -7,9 +7,9 @@ import sys
 
 	
 inputFolder = ''
-outputFolder = 'converted_datasets'
-csvFileName1 = '.\\train.csv'
-csvFileName2 = '.\\test.csv'
+outputFolder = './converted_datasets'
+csvFileName1 = './train.csv'
+csvFileName2 = './test.csv'
 imgSize = 28
 trainDataRatio = 0.8
 
